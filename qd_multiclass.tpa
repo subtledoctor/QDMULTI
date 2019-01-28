@@ -282,6 +282,8 @@ ABILITY1    ****        ****        ****        ****        ****        ****    
 			WRITE_SHORT  0x2c 100 //probability 100% 
 			
 		CREATE SPL ~QD_MC_01~
+
+		COPY_EXISTING ~QD_MC_01.SPL~ ~override~ 
 			LPF ADD_SPELL_HEADER END   
 						
 		COPY_EXISTING ~QD_MC_01.SPL~ ~override/QD_MCF01.SPL~ 
